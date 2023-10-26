@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+<bean id="st" class="spring2.Student">
+<property name="skills"><list>
+<value>"java"</value>
+<value>"html"</value>
+<value>"sql"</value>
+</list>
+</property>
+
+<property name="mobiles"><set>
+<value>"Samsung"</value>
+<value>"iphone"</value>
+<value>"nokia"</value>
+</set>
+</property>
+
+<property name="marks">
+<map>
+<entry key="10th" value="80"></entry>
+<entry key="12th" value="90"></entry>
+<entry key="B.E" value="60"></entry>
+</map>
+</property>
+
+
+</bean>
+
+</beans>
